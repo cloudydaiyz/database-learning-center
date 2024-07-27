@@ -1,0 +1,1 @@
+`zip zip/output.zip -r dist`
