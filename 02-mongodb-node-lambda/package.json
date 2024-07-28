@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node dist/index.js",
+    "start": "npm run build && node index.js",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build && node test.js"
   },
-  "author": "",
+  "author": "Kylan Duncan",
   "license": "ISC",
   "dependencies": {
     "mongodb": "6.8"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.142",
     "@types/node": "^20.14.12"
   }
 }
